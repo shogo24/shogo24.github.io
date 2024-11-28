@@ -4,21 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
   <title>Home Page</title>
 </head>
 <body>
-  <div class="sidebar">
+  <div id="menuTable">
+  <img id="logo" alt="Logo" src="Images\LogoClose.PNG">
+  <aside id="sidebar">
+    <img id="logo2" alt="Logo" src="Images\LogoOpen.PNG">
+    <div id="socials">
+      <a href="https://github.com/shogo24"><img id="github" alt="GitHub" src="Images\GitHub.png"></a>
+      <a href="https://www.linkedin.com/in/shogo-hardy-098374273/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img id="linkedin" alt="LinkedIn" src="Images\LinkedIn.png"></a>
+      <a href="https://www.instagram.com/shogo_hardy/"><img id="instagram" alt="Instagram" src="Images\Instagram.png"></a>
+      <a href="mailto:shogo.a.hardy@gmail.com"><img id="mail" alt="Mail" src="Images\Mail.png"></a>
+    </div>
     <h2>Navigation</h2>
-    <a href="HTMLCheatSheet.html">HTML</a>
-    <a href="CSSCheatSheet.html">CSS</a>
-    <a href="JSCheatSheet.html">JS</a>
-    <a href="resume.html">Resume</a>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="HTMLCheatSheet.html">HTML</a>
+      <a href="CSSCheatSheet.html">CSS</a>
+      <a href="JSCheatSheet.html">JS</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </aside>
+        <!--== Sidebar-Toggler ==-->
+        <div class="sidebar_toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+  <div id="info">
+    <div id="text">
+      <h1 id="name">Hi, I'm Shogo.</h1>
+      <p id="about">I'm a passionate programming student focused on mastering new technologies and skills. This is my site, where I share whatever side projects I've been working on.</p>
+    </div>
+    <div id="shadow">
+      <img id="profilePhoto" alt="Shogo Hardy" src="Images\profilePhoto.png">
+    </div>
   </div>
-  <div id="Shadow">
-    <img id="profilePhoto" alt="Shogo Hardy" src="Images\profilePhoto.png">
-  </div>
-  <h1 id="name">Shogo Hardy</h1>
+      <!--====== JavaScript ======-->
+      <script src="scripts.js"></script>
 </body>
 </html>
 
