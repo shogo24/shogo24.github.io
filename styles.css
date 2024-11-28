@@ -51,6 +51,16 @@ p {
   width: 200px;
 }
 
+#line {
+  position:fixed;
+  border-left: 2px solid #444;
+  z-index: 3;
+  height: 30px;
+  padding: 10px;
+  left: 230px;
+  top: 45px;
+}
+
 #github, #linkedin, #instagram, #mail{
     display: flex;
     width: 30px;
@@ -91,7 +101,7 @@ p {
 
 #sidebar {
     background-color: #333;
-    padding: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
     align-items: stretch;
     width: 80%;
@@ -111,12 +121,6 @@ p {
     transition: opacity 0.3s ease, visibility 0.2s ease, transform 0.3s ease;
   }
   
-  #line {
-    position:fixed;
-    border-left: 2px solid #444;
-    width: 300px;
-    padding: 10px;
-  }
   /* when the sidebar has 'show' class */
   #sidebar.show {
     pointer-events: all;
@@ -160,12 +164,15 @@ p {
     margin-bottom: -1.2px;
   }
   
-  #sidebar.show + .sidebar_toggler span:first-child {
+  #sidebar.show + .sidebar_toggler span:nth-of-type(2) {
     transform: rotate(45deg);
     background-color: white;
   }
-  
-  #sidebar.show + .sidebar_toggler span:nth-child(2) {
+
+  #sidebar.show + .sidebar_toggler #line {
+    border-color: white;
+  }
+  #sidebar.show + .sidebar_toggler span:nth-of-type(1) {
     opacity: 0;
     transform: translateX(-100%);
   }
