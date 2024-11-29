@@ -4,27 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
-  <title>Resume</title>
+  <title>My resume</title>
 </head>
 <body>
-  <div class="sidebar">
-    <img id="logo" alt="Logo" src="Images\LogoOpen.PNG">
+  <img id="logo" alt="Logo" src="Images/LogoClose.PNG">
+  <div id="line"></div>
+  <aside id="sidebar">
     <div id="socials">
       <a href="https://github.com/shogo24"><img id="github" alt="GitHub" src="Images\GitHub.png"></a>
       <a href="https://www.linkedin.com/in/shogo-hardy-098374273/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img id="linkedin" alt="LinkedIn" src="Images\LinkedIn.png"></a>
       <a href="https://www.instagram.com/shogo_hardy/"><img id="instagram" alt="Instagram" src="Images\Instagram.png"></a>
       <a href="mailto:shogo.a.hardy@gmail.com"><img id="mail" alt="Mail" src="Images\Mail.png"></a>
     </div>
+    <div id="navRow">
     <h2>Navigation</h2>
-    <div id="nav">
-      <a href="index.html">Home</a>
-      <a href="HTMLCheatSheet.html">HTML</a>
-      <a href="CSSCheatSheet.html">CSS</a>
-      <a href="JSCheatSheet.html">JS</a>
-      <a href="resume.html">Resume</a>
+    <div id="line2"></div>
     </div>
-  </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="HTMLCheatSheet.html">HTML cheat sheet</a>
+      <a href="CSSCheatSheet.html">CSS cheat sheet</a>
+      <a href="JSCheatSheet.html">JavaScript cheat sheet</a>
+      <a href="resume.html">My resume</a>
+    </div>
+  </aside>
+        <!--== Sidebar-Toggler ==-->
+        <div class="sidebar_toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+  <!--====== JavaScript ======-->
+  <script src="scripts.js"></script>
 </body>
 </html>
 
