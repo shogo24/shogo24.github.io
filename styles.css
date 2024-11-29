@@ -132,9 +132,9 @@ p {
   width: 1000px;
 }
 
-h2 {
-  color: #444;
-  font-size: 40px;
+#projecth2 {
+    color: #444;
+    font-size: 40px;
 }
 
 #project {
