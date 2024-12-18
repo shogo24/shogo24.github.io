@@ -26,6 +26,9 @@ window.addEventListener('click', (e) => {
     }
 });
 
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent = currentYear;
+
 document.getElementById("game").onclick = function() {
-  window.location.href = "textRPG.html";
+    window.location.href = "textRPG.html";
 };

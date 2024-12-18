@@ -1,3 +1,6 @@
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent = currentYear;
+
 //HTML elements
 const title = document.getElementById("titleScreen");
 const display = document.getElementById("display");
