@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="textRPG.css">
+  <link rel="icon" href="Images\braygo-Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <title>Dungeons & Bad Decisions</title>
+</head>
+<body>
+
+  <div id="titleScreen">
+    <img id="gameLogo" src="images\logo-image.png">
+    <h1 id="logo">Dungeons & Bad Decisions</h1>
+    <button id="startButton" onclick="startGame()">start game</button>
+  </div>
+  <div id="createChar">
+    <h3 id="charTitle">Create your character</h3>
+    <input id="inputName" placeholder="name...">
+    <div id="classChoice">
+      <ul id="classNames">
+        <li onclick="charSelection(1)" id="Warrior"><img src="D&B-Images\sword.png">Warrior</li>
+        <li onclick="charSelection(2)" id="Mage"><img src="D&B-Images\Wizard-hat.png">Mage</li>
+        <li onclick="charSelection(3)" id="Archer"><img src="D&B-Images\bow.png">Archer</li>
+      </ul>
+      <button id="submit" onclick="createCharacter()">enter</button>
+    </div>
+  </div>
+  <div id="charStats">
+      <h3 id="display"></h3>
+      <h3 id="stats"></h3>
+      <img id="characterImage" src="">
+      <button onclick="runGame()">Enter The Dungeon!</button>
+  </div>
+  <div id="encounter">
+    <h3 id="encTitle"></h3>
+    <img id="fireChest">
+      <div id="enemyContain">
+        <h3 id="enemyDamage"></h3>
+        <div id="enemy"><img id="enemyImage" ></div>
+          <ul id="battle" >
+            <li id="attack" >attack</li>
+            <li id="run" >run</li>
+          </ul>
+        </div>
+      </div>
+  <button id="continue" onclick="runGame()">continue</button>
+<script src="textRPG.js"></script>
+</body>
+</html>

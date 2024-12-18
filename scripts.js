@@ -25,3 +25,7 @@ window.addEventListener('click', (e) => {
         currentIndex = 0;
     }
 });
+
+document.getElementById("game").onclick = function() {
+  window.location.href = "textRPG.html";
+};
