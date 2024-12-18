@@ -26,6 +26,7 @@ h4 {
 
 h2 {
  color:#555;
+ padding: 10px;
 }
 
 .nav a {
@@ -64,7 +65,7 @@ p {
 }
 
 #name{
-    width: 500px;
+    width: calc(20vw + 35vh);
 }
 
 td, th {
@@ -157,8 +158,6 @@ th {
   padding-top: 150px;
   display: flex;
   flex-direction: row;
-  top:200px;
-  width: 1000px;
 }
 
 #projecth2 {
@@ -173,7 +172,6 @@ th {
 #projectInfo {
   padding-top: 20px;
   padding-left: 20px;
-  width: 600px;
 }
 
 #db {
@@ -300,3 +298,17 @@ background-color: rgb(220, 220, 220);
     background-color: white;
   }
   
+  @media only screen and (max-width:780px){
+
+    #info, #project1 {
+      flex-direction:column ;
+    }
+
+    #profilePhoto, #shadow {
+      width: 200px;
+    }
+
+    #text {
+      order: 1;
+    }
+  }
