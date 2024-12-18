@@ -65,7 +65,7 @@ p {
 }
 
 #name{
-    width: calc(20vw + 35vh);
+  width: calc(25vw + 25vh);
 }
 
 td, th {
@@ -139,7 +139,8 @@ th {
     flex-direction: column;
     position: relative;
     top: 100px;
-    padding-right: 50px;
+    width: calc(25vw + 25vh);
+    padding: 0 50px 0 100px;
 }
 
 #shadow{
@@ -158,6 +159,25 @@ th {
   padding-top: 150px;
   display: flex;
   flex-direction: row;
+  width: calc(45vw + 45vh);
+}
+
+#game {
+width: 100px;
+ background-color: rgb(220, 220, 220);
+ padding: 10px;
+ border-radius: 5px;
+ box-shadow: 0 9px #999;
+ font-family: Pixelify Sans;
+}
+
+#game:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+#game:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #projecth2 {
@@ -167,6 +187,7 @@ th {
 
 #project {
   padding-top: 300px;
+  width: calc(30vw + 40vh);
 }
 
 #projectInfo {
@@ -176,7 +197,9 @@ th {
 
 #db {
   width: 200px;
-  padding-right: 50px;
+  border: 10px solid #444;
+  margin-right: 50px;
+  border-style: outset;
 }
 
 #dbtext {
@@ -308,7 +331,11 @@ background-color: rgb(220, 220, 220);
       width: 200px;
     }
 
+    #project, #project1 {
+      width: calc(30vw + 30vh);
+    }
     #text {
       order: 1;
+      padding: 0;
     }
   }
