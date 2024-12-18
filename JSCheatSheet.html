@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Jave Script Cheat Sheet</title>
+  <link id="favicon" rel="icon" href="Images/favconLight.PNG">
 </head>
 <body>
   <img id="logo" alt="Logo" src="Images/LogoClose.PNG">
@@ -34,6 +35,409 @@
           <span></span>
           <span></span>
         </div>
+        <div class="front">
+          <h1>JavaScript</h1>
+          <img class="icon" alt="JS Icon" src="Images\JSicon.png">
+        </div>
+        <h2>Cheat Sheet And Guide</h2>
+        <h4>- Basic Structure -</h4>
+        <p class="bStructure">
+          // This is a comment in JavaScript <br>
+          // Declaring a variable <br>
+          let message = "Hello, World!"; <br>
+          <br>
+          // Function definition <br>
+          function greet() { <br>
+            console.log(message); <br>
+          } <br>
+          <br>
+          // Calling the function <br>
+          greet();
+        </p>
+        <h4>- Variables & Data Types -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>var</td>
+              <td>Declares a variable with function scope.</td>
+              <td>var x = 10;</td>
+            </tr>
+            <tr>
+              <td>let</td>
+              <td>Declares a block-scoped variable.</td>
+              <td>let y = 20;</td>
+            </tr>
+            <tr>
+              <td>const</td>
+              <td>Declares a constant (block-scoped).</td>
+              <td>const z = 30;</td>
+            </tr>
+            <tr>
+              <td>Number</td>
+              <td>Represents numerical values (integers or floating point).</td>
+              <td>let num = 42;</td>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>Represents a sequence of characters (text).</td>
+              <td>let str = "Hello World";</td>
+            </tr>
+            <tr>
+              <td>Boolean</td>
+              <td>Represents true or false values.</td>
+              <td>let isActive = true;</td>
+            </tr>
+            <tr>
+              <td>Object</td>
+              <td>Represents a collection of key-value pairs.</td>
+              <td>let person = { name: "John", age: 30 };</td>
+            </tr>
+            <tr>
+              <td>Array</td>
+              <td>Represents a collection of items in an ordered list.</td>
+              <td>let arr = [1, 2, 3, 4];</td>
+            </tr>
+            <tr>
+              <td>undefined</td>
+              <td>Represents an uninitialized variable.</td>
+              <td>let x; // undefined</td>
+            </tr>
+            <tr>
+              <td>null</td>
+              <td>Represents a null or empty value.</td>
+              <td>let empty = null;</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Operators -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+</td>
+              <td>Addition or string concatenation.</td>
+              <td>let sum = 5 + 3;<br>let greet = "Hello" + " World";</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Subtraction.</td>
+              <td>let diff = 10 - 5;</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Multiplication.</td>
+              <td>let product = 4 * 2;</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Division.</td>
+              <td>let quotient = 10 / 2;</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Modulus (remainder of division).</td>
+              <td>let remainder = 10 % 3;</td>
+            </tr>
+            <tr>
+              <td>++</td>
+              <td>Increment (increase by 1).</td>
+              <td>let i = 5; i++;</td>
+            </tr>
+            <tr>
+              <td>--</td>
+              <td>Decrement (decrease by 1).</td>
+              <td>let i = 5; i--;</td>
+            </tr>
+            <tr>
+              <td>=</td>
+              <td>Assignment (assign a value).</td>
+              <td>let x = 10;</td>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>Equality (checks if values are equal).</td>
+              <td>5 == '5' // true</td>
+            </tr>
+            <tr>
+              <td>===</td>
+              <td>Strict equality (checks if values and types are equal).</td>
+              <td>5 === '5' // false</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>Inequality (checks if values are not equal).</td>
+              <td>5 != 4 // true</td>
+            </tr>
+            <tr>
+              <td>!==</td>
+              <td>Strict inequality (checks if values and types are not equal).</td>
+              <td>5 !== '5' // true</td>
+            </tr>
+            <tr>
+              <td>></td>
+              <td>Greater than.</td>
+              <td>5 > 3 // true</td>
+            </tr>
+            <tr>
+              <td><</td>
+              <td>Less than.</td>
+              <td>5 < 3 // false</td>
+            </tr>
+            <tr>
+              <td>>=</td>
+              <td>Greater than or equal to.</td>
+              <td>5 >= 5 // true</td>
+            </tr>
+            <tr>
+              <td><=</td>
+              <td>Less than or equal to.</td>
+              <td>5 <= 10 // true</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Control Flow -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Keyword</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>if</td>
+              <td>Executes code if condition is true.</td>
+              <td>if (x &gt; 10) { console.log("Greater"); }</td>
+            </tr>
+            <tr>
+              <td>else</td>
+              <td>Executes code if condition is false.</td>
+              <td>if (x &gt; 10) { console.log("Greater"); } else { console.log("Smaller"); }</td>
+            </tr>
+            <tr>
+              <td>else if</td>
+              <td>Checks multiple conditions.</td>
+              <td>if (x &gt; 10) { console.log("Greater"); } else if (x == 10) { console.log("Equal"); }</td>
+            </tr>
+            <tr>
+              <td>switch</td>
+              <td>Selects one of many code blocks to execute based on a variable's value.</td>
+              <td>switch(day) { case 1: console.log("Monday"); break; }</td>
+            </tr>
+            <tr>
+              <td>for</td>
+              <td>A loop that runs for a specific number of times.</td>
+              <td>for (let i = 0; i &lt; 5; i++) { console.log(i); }</td>
+            </tr>
+            <tr>
+              <td>while</td>
+              <td>A loop that runs while a condition is true.</td>
+              <td>while (x &lt; 5) { console.log(x); x++; }</td>
+            </tr>
+            <tr>
+              <td>do...while</td>
+              <td>A loop that runs at least once before checking the condition.</td>
+              <td>do { console.log(x); x++; } while (x &lt; 5);</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Functions -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Function Declaration</td>
+              <td>Declares a function.</td>
+              <td>function greet() { console.log("Hello!"); }</td>
+            </tr>
+            <tr>
+              <td>Function Expression</td>
+              <td>Defines a function within an expression.</td>
+              <td>const greet = function() { console.log("Hello!"); };</td>
+            </tr>
+            <tr>
+              <td>Arrow Function</td>
+              <td>Shorter syntax for defining functions.</td>
+              <td>const greet = () => { console.log("Hello!"); };</td>
+            </tr>
+            <tr>
+              <td>Return</td>
+              <td>Returns a value from a function.</td>
+              <td>function add(a, b) { return a + b; }</td>
+            </tr>
+            <tr>
+              <td>Parameters</td>
+              <td>Values passed to a function.</td>
+              <td>function greet(name) { console.log("Hello " + name); }</td>
+            </tr>
+            <tr>
+              <td>Arguments</td>
+              <td>Values supplied to a function when called.</td>
+              <td>greet("John");</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Objects & Arrays -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Object Literal</td>
+              <td>Defines an object with properties and values.</td>
+              <td>let person = { name: "John", age: 30 };</td>
+            </tr>
+            <tr>
+              <td>Array Literal</td>
+              <td>Defines an array with values.</td>
+              <td>let arr = [1, 2, 3, 4];</td>
+            </tr>
+            <tr>
+              <td>Accessing Object Property</td>
+              <td>Access an object property using dot notation or bracket notation.</td>
+              <td>person.name or person["name"]</td>
+            </tr>
+            <tr>
+              <td>Accessing Array Element</td>
+              <td>Access an element in an array by index.</td>
+              <td>arr[0] // 1</td>
+            </tr>
+            <tr>
+              <td>Array Methods</td>
+              <td>Common methods like push(), pop(), shift(), unshift().</td>
+              <td>arr.push(5);</td>
+            </tr>
+            <tr>
+              <td>Object Methods</td>
+              <td>Define methods within objects.</td>
+              <td>let person = { name: "John", greet() { console.log("Hello"); } };</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Events -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>addEventListener()</td>
+              <td>Attaches an event handler to an element.</td>
+              <td>button. addEventListener ("click", function() { alert("Clicked!"); });</td>
+            </tr>
+            <tr>
+              <td>onclick</td>
+              <td>Triggered when an element is clicked.</td>
+              <td>button.onclick = function() { alert("Clicked!"); };</td>
+            </tr>
+            <tr>
+              <td>onmouseover</td>
+              <td>Triggered when mouse hovers over an element.</td>
+              <td>div.onmouseover = function() { console.log ("Mouse over!"); };</td>
+            </tr>
+            <tr>
+              <td>onchange</td>
+              <td>Triggered when the value of an input element changes.</td>
+              <td>input.onchange = function() { console.log ("Changed!"); };</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- ES6+ Features -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Template Literals</td>
+              <td>Allows embedding expressions inside strings using backticks.</td>
+              <td>let name = "John"; let greeting = `Hello, ${name}!`;</td>
+            </tr>
+            <tr>
+              <td>Destructuring Assignment</td>
+              <td>Extracts values from arrays or objects and assigns them to variables.</td>
+              <td>let [a, b] = [1, 2]; let {name, age} = person;</td>
+            </tr>
+            <tr>
+              <td>Spread Operator</td>
+              <td>Expands elements of an array or object.</td>
+              <td>let arr = [1, 2, 3]; let newArr = [...arr, 4];</td>
+            </tr>
+            <tr>
+              <td>Rest Parameter</td>
+              <td>Collects arguments into an array in function definitions.</td>
+              <td>function sum(...numbers) { return numbers.reduce((a, b) => a + b); }</td>
+            </tr>
+            <tr>
+              <td>Promises</td>
+              <td>Represents asynchronous operations.</td>
+              <td>let promise = new Promise((resolve, reject) => { resolve("Done"); });</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Asynchronous Programming -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>setTimeout()</td>
+              <td>Calls a function after a specified time.</td>
+              <td>setTimeout(() => { console.log("Hello after 2 seconds!"); }, 2000);</td>
+            </tr>
+            <tr>
+              <td>setInterval()</td>
+              <td>Repeatedly calls a function after a specified interval.</td>
+              <td>setInterval(() => { console.log("Hello every 2 seconds!"); }, 2000);</td>
+            </tr>
+            <tr>
+              <td>async/await</td>
+              <td>Allows working with promises in a synchronous style.</td>
+              <td>async function fetchData() { let response = await fetch(url); }</td>
+            </tr>
+          </tbody>
+        </table>        
+  <footer>
+    <p id="rights">&copy; <span id="copyright-year"></span> Shogo Hardy. All Rights Reserved.</p>
+  </footer>
   <!--====== JavaScript ======-->
   <script src="scripts.js"></script>
 </body>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>CSS Cheat Sheet</title>
+  <link id="favicon" rel="icon" href="Images/favconLight.PNG">
 </head>
 <body>
   <img id="logo" alt="Logo" src="Images/LogoClose.PNG">
@@ -34,6 +35,350 @@
           <span></span>
           <span></span>
         </div>
+        <div class="front">
+          <h1>CSS</h1>
+          <img class="icon" alt="CSS Icon" src="Images\CSSicon.png">
+        </div>
+        <h2>Cheat Sheet And Guide</h2>
+        <h4>- Basic Structure -</h4>
+        <p class="bStructure">
+          /* This is a comment in CSS */ <br>
+          /* Global styles */ <br>
+          body { <br>
+            font-family: Arial, sans-serif; <br>
+            background-color: #f4f4f4; <br>
+            margin: 0; <br>
+            padding: 0; <br>
+          } <br>
+          <br>
+          h1 { <br>
+            color: #333; <br>
+            text-align: center; <br>
+          } <br>
+          <br>
+          p { <br>
+            color: #666; <br>
+            font-size: 16px; <br>
+            line-height: 1.5; <br>
+          }
+        </p>
+        <h4>- Text Properties -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>color</td>
+              <td>Sets the color of text.</td>
+              <td>color: red;</td>
+            </tr>
+            <tr>
+              <td>font-family</td>
+              <td>Defines the font to be used for text.</td>
+              <td>font-family: 'Arial', sans-serif;</td>
+            </tr>
+            <tr>
+              <td>font-size</td>
+              <td>Sets the size of the font.</td>
+              <td>font-size: 16px;</td>
+            </tr>
+            <tr>
+              <td>font-weight</td>
+              <td>Sets the thickness of the font.</td>
+              <td>font-weight: bold;</td>
+            </tr>
+            <tr>
+              <td>line-height</td>
+              <td>Sets the height between lines of text.</td>
+              <td>line-height: 1.5;</td>
+            </tr>
+            <tr>
+              <td>text-align</td>
+              <td>Aligns the text inside an element.</td>
+              <td>text-align: center;</td>
+            </tr>
+            <tr>
+              <td>text-decoration</td>
+              <td>Adds decoration to text (underline, overline, etc.).</td>
+              <td>text-decoration: underline;</td>
+            </tr>
+            <tr>
+              <td>text-transform</td>
+              <td>Controls the capitalization of text (uppercase, lowercase, capitalize).</td>
+              <td>text-transform: uppercase;</td>
+            </tr>
+            <tr>
+              <td>letter-spacing</td>
+              <td>Controls the space between characters.</td>
+              <td>letter-spacing: 1px;</td>
+            </tr>
+            <tr>
+              <td>word-spacing</td>
+              <td>Controls the space between words.</td>
+              <td>word-spacing: 5px;</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Box Model & Spacing -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>margin</td>
+              <td>Sets the space outside an element (outside the border).</td>
+              <td>margin: 10px;</td>
+            </tr>
+            <tr>
+              <td>padding</td>
+              <td>Sets the space inside an element, between the content and the border.</td>
+              <td>padding: 10px;</td>
+            </tr>
+            <tr>
+              <td>border</td>
+              <td>Defines the border around an element.</td>
+              <td>border: 2px solid black;</td>
+            </tr>
+            <tr>
+              <td>width</td>
+              <td>Sets the width of an element.</td>
+              <td>width: 100px;</td>
+            </tr>
+            <tr>
+              <td>height</td>
+              <td>Sets the height of an element.</td>
+              <td>height: 200px;</td>
+            </tr>
+            <tr>
+              <td>box-sizing</td>
+              <td>Defines how the total width and height are calculated (including padding and borders).</td>
+              <td>box-sizing: border-box;</td>
+            </tr>
+            <tr>
+              <td>display</td>
+              <td>Defines how an element is displayed (e.g., block, inline, flex, grid).</td>
+              <td>display: block;</td>
+            </tr>
+            <tr>
+              <td>overflow</td>
+              <td>Specifies what happens if content overflows an element’s box (scroll, hidden, etc.).</td>
+              <td>overflow: auto;</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>- Positioning -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>position</td>
+              <td>Specifies how an element is positioned (static, relative, absolute, fixed, sticky).</td>
+              <td>position: relative;</td>
+            </tr>
+            <tr>
+              <td>top, right, bottom, left</td>
+              <td>Offsets the position of an element (used with relative or absolute positioning).</td>
+              <td>top: 20px; left: 30px;</td>
+            </tr>
+            <tr>
+              <td>z-index</td>
+              <td>Specifies the stack order of an element (higher numbers appear on top).</td>
+              <td>z-index: 10;</td>
+            </tr>
+            <tr>
+              <td>float</td>
+              <td>Allows an element to float to the left or right, affecting text and other elements around it.</td>
+              <td>float: left;</td>
+            </tr>
+            <tr>
+              <td>clear</td>
+              <td>Clears floated elements, affecting the layout of the next element.</td>
+              <td>clear: both;</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Flexbox -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>display: flex</td>
+              <td>Defines a flex container, enabling flexbox layout.</td>
+              <td>display: flex;</td>
+            </tr>
+            <tr>
+              <td>flex-direction</td>
+              <td>Specifies the direction of flex items (row, column).</td>
+              <td>flex-direction: row;</td>
+            </tr>
+            <tr>
+              <td>justify-content</td>
+              <td>Aligns flex items along the main axis (e.g., left, center, right).</td>
+              <td>justify-content: center;</td>
+            </tr>
+            <tr>
+              <td>align-items</td>
+              <td>Aligns flex items along the cross axis (e.g., top, center, bottom).</td>
+              <td>align-items: stretch;</td>
+            </tr>
+            <tr>
+              <td>flex-wrap</td>
+              <td>Defines whether flex items should wrap or not.</td>
+              <td>flex-wrap: wrap;</td>
+            </tr>
+            <tr>
+              <td>flex</td>
+              <td>A shorthand for flex-grow, flex-shrink, and flex-basis.</td>
+              <td>flex: 1 1 0%;</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Grid Layout -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>display: grid</td>
+              <td>Defines a grid container.</td>
+              <td>display: grid;</td>
+            </tr>
+            <tr>
+              <td>grid-template-columns</td>
+              <td>Defines the number and size of columns in a grid.</td>
+              <td>grid-template-columns: 100px 1fr 2fr;</td>
+            </tr>
+            <tr>
+              <td>grid-template-rows</td>
+              <td>Defines the number and size of rows in a grid.</td>
+              <td>grid-template-rows: 50px 200px;</td>
+            </tr>
+            <tr>
+              <td>grid-gap</td>
+              <td>Sets the gap between rows and columns in a grid.</td>
+              <td>grid-gap: 10px;</td>
+            </tr>
+            <tr>
+              <td>grid-column</td>
+              <td>Specifies how many columns an item should span.</td>
+              <td>grid-column: span 2;</td>
+            </tr>
+            <tr>
+              <td>grid-row</td>
+              <td>Specifies how many rows an item should span.</td>
+              <td>grid-row: span 2;</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Styling & Effects -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>border-radius</td>
+              <td>Rounds the corners of an element.</td>
+              <td>border-radius: 10px;</td>
+            </tr>
+            <tr>
+              <td>box-shadow</td>
+              <td>Adds shadow effects to elements.</td>
+              <td>box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</td>
+            </tr>
+            <tr>
+              <td>text-shadow</td>
+              <td>Adds shadow to text.</td>
+              <td>text-shadow: 1px 1px 2px #000000;</td>
+            </tr>
+            <tr>
+              <td>opacity</td>
+              <td>Sets the transparency level of an element.</td>
+              <td>opacity: 0.5;</td>
+            </tr>
+            <tr>
+              <td>transform</td>
+              <td>Allows you to rotate, scale, skew, or move an element.</td>
+              <td>transform: rotate(45deg);</td>
+            </tr>
+            <tr>
+              <td>transition</td>
+              <td>Defines the transition effect when a property changes (e.g., fade, slide).</td>
+              <td>transition: all 0.3s ease;</td>
+            </tr>
+            <tr>
+              <td>animation</td>
+              <td>Defines animations for elements (keyframes, durations).</td>
+              <td>animation: fadeIn 2s ease-in-out;</td>
+            </tr>
+          </tbody>
+        </table>        
+        <h4>- Miscellaneous -</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>visibility</td>
+              <td>Specifies whether an element is visible or hidden (without removing it from the document flow).</td>
+              <td>visibility: hidden;</td>
+            </tr>
+            <tr>
+              <td>cursor</td>
+              <td>Changes the mouse cursor when it hovers over an element.</td>
+              <td>cursor: pointer;</td>
+            </tr>
+            <tr>
+              <td>filter</td>
+              <td>Applies visual effects like blur or brightness to elements.</td>
+              <td>filter: blur(5px);</td>
+            </tr>
+            <tr>
+              <td>content</td>
+              <td>Specifies content to insert in pseudo-elements (e.g., ::before, ::after).</td>
+              <td>content: "New";</td>
+            </tr>
+          </tbody>
+        </table>
+  <footer>
+    <p id="rights">&copy; <span id="copyright-year"></span> Shogo Hardy. All Rights Reserved.</p>
+  </footer>        
   <!--====== JavaScript ======-->
   <script src="scripts.js"></script>
 </body>
